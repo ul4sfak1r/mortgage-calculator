@@ -1,0 +1,400 @@
+*::before, *, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: hsl(202, 86%, 94%);
+	display: flex;
+		align-items: center;
+		justify-content: center;
+	min-height: 100dvh;
+}
+
+.wrapper {
+	width: 70%;
+	display: flex;
+	background-color: white;
+	border-radius: 20px;
+}
+
+.calculator-div {
+	background-color: hsl(0, 0%, 100%);
+	width: 50%;
+	padding: 30px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.title-and-clearAll-div {
+	display: flex;
+		justify-content: space-between;
+		align-items: center;
+	margin-bottom: 30px;
+}
+
+p, label {
+	color: hsl(200, 24%, 40%);
+}
+
+h1 {
+	font-size: 1.5em;
+	margin-block: 0;
+}
+
+.clear-all {
+	border-bottom: 1px solid hsl(200, 24%, 40%);
+	margin-block: 0;
+	display: inline-block;	
+}
+
+.clear-all:hover {
+	cursor: pointer;
+	color: hsl(202, 55%, 16%);
+}
+
+label {
+	margin-bottom: 8px;
+	display: block;
+}
+
+.input-div {
+	display: flex;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.sterling-blue-div {
+	background-color: hsl(202, 86%, 94%);
+	border: 1px solid hsl(200, 26%, 54%);
+		border-right: none;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	display: flex;
+  		align-items: center;
+  		justify-content: center;
+  	font-weight: bold;
+  	color: hsl(200, 24%, 40%);
+  	flex: 0 0 40px;
+}
+
+#mortgage-amount {
+	width: 90%;
+	border: 1px solid hsl(200, 26%, 54%);
+		border-left: none;
+	  	border-top-right-radius: 5px; 
+	  	border-bottom-right-radius: 5px;
+	outline: none;
+	flex: 1;
+	color: red;
+	color: hsl(202, 55%, 16%);
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 15px 0 15px 15px;
+}
+
+.input-div:active .sterling-blue-div {
+	border-color: hsl(61, 70%, 52%); 
+	background-color: hsl(61, 70%, 52%);
+}
+
+.input-div:active #mortgage-amount {
+	border-color: hsl(61, 70%, 52%); 
+}
+
+input:hover {
+	cursor: pointer;
+}
+
+.term-rate-div {
+	display: flex;
+		justify-content: space-between;
+		gap: 15px;
+	margin-block: 20px;
+}
+
+.term-rate-div .blue-div {
+	width: 50%;
+	background-color: ;
+	border-top-right-radius: 5px; 
+  	border-bottom-right-radius: 5px;
+}
+
+.years-blue-div {
+	background-color: hsl(202, 86%, 94%);
+	border: 1px solid hsl(200, 26%, 54%);
+	border-left: none;
+	display: flex;
+  		align-items: center;
+  		justify-content: center;
+  	font-weight: bold;
+  	color: hsl(200, 24%, 40%);
+  	width: 45%;
+  	border-top-right-radius: 5px; 
+  	border-bottom-right-radius: 5px;
+  	flex: 0 0 70px;
+}
+
+#term {
+	width: 100%;
+	border: 1px solid hsl(200, 26%, 54%);
+	border-right: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	outline: none;
+	flex: 1;
+	color: hsl(202, 55%, 16%);
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 15px 0 15px 15px;
+}
+
+.input-div:active .years-blue-div {
+	border-color: hsl(61, 70%, 52%); 
+	background-color: hsl(61, 70%, 52%);
+}
+
+.input-div:active #term {
+	border-color: hsl(61, 70%, 52%); 
+}
+
+.percentage-blue-div {
+	background-color: hsl(202, 86%, 94%);
+	border: 1px solid hsl(200, 26%, 54%);
+	border-left: none;
+	display: flex;
+  		align-items: center;
+  		justify-content: center;
+  	font-weight: bold;
+  	color: hsl(200, 24%, 40%);
+  	width: 30%;
+  	border-top-right-radius: 5px; 
+  	border-bottom-right-radius: 5px;
+  	flex: 0 0 40px;
+}
+
+#rate {
+	width: 100%;
+	border: 1px solid hsl(200, 26%, 54%);
+	border-right: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	outline: none;
+	flex: 1;
+	color: hsl(202, 55%, 16%);
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 15px 0 15px 15px;
+}
+
+.input-div:active .percentage-blue-div {
+	border-color: hsl(61, 70%, 52%); 
+	background-color: hsl(61, 70%, 52%);
+}
+
+.input-div:active #rate {
+	border-color: hsl(61, 70%, 52%); 
+}
+
+.radio-div {
+	border: 1px solid hsl(200, 26%, 54%);
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: flex;
+		align-items: center;
+	color: hsl(202, 55%, 16%);
+	font-weight: bold;
+}
+
+.radio-div:hover {
+	cursor: pointer;
+	border-color: hsl(61, 70%, 52%);
+}
+
+.radio-div:active {
+	background-color: hsl(61, 70%, 70%);
+}
+
+.hidden {
+	display: none;
+}
+
+.custom-radio {
+	width: 20px;
+  	height: 20px;
+  	border: 2px solid hsl(61, 70%, 52%);
+  	border-radius: 50%;
+  	margin-right: 8px;
+  	position: relative;
+}
+
+.hidden:checked + .custom-radio {
+  background-color: white; 
+  border-color: hsl(61, 70%, 52%);
+}
+
+.hidden:checked + .custom-radio::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: hsl(61, 70%, 52%);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio-div:has(.hidden:checked) {
+	background-color: hsl(61, 70%, 70%);
+	border-color: hsl(61, 70%, 52%);
+}
+
+input[type="radio"] {
+	margin-right: 15px;
+}
+
+button {
+	width: 75%;
+	background-color: hsl(61, 70%, 52%);
+	font-weight: bold;
+	font-size: 1.1em;
+	color: hsl(202, 55%, 16%);
+	display: flex;
+	justify-content: center;
+		align-items: center;
+		gap: 15px;
+	border: none;
+	border-radius: 25px;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: hsl(61, 70%, 70%);
+}
+
+/*Result Div*/
+.result-div {
+	background-color: hsl(202, 55%, 16%);
+	display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	width: 50%;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 80px;
+	text-align: center;
+	padding: 20px 40px 40px 40px;
+}
+
+.no-result-div > h2, .hidden-div > h2 {
+	color: white;
+	margin-bottom: 0;
+}
+
+.no-result-div > p {
+	color: hsl(203, 41%, 72%);
+	font-size: 0.9em;
+}
+
+.error-message {
+	color: hsl(4, 69%, 50%);
+	margin-block: 8px;
+	font-size: 0.8em;
+}
+
+.red-border {
+	border-color: hsl(4, 69%, 50%) !important;
+}
+
+.red-background {
+	background-color: hsl(4, 69%, 50%);
+	color: white;
+}
+
+.hidden-div {
+	text-align: left !important;
+	max-width: 100%;
+}
+
+.hidden-div p {
+	color: hsl(203, 41%, 72%);
+}
+
+.repayment-div {
+	background-color: hsl(202, 55%, 10%);
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 0px -4px hsl(61, 70%, 52%);
+	margin-block: 40px;
+}
+
+.monthly-repayment {
+	color: hsl(61, 70%, 52%) !important;
+	font-size: 3em;
+	font-weight: bold;
+	margin-block: 10px 30px;
+}
+
+.total-repayment {
+	color: white !important;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-block: 0.5em;
+}
+
+.no-margin-block {
+	margin-block: 0;
+}
+
+.total-headline {
+	margin-block: 30px 10px;
+}
+
+.border {
+	border-top: 1px solid hsl(202, 55%, 16%);
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		flex-direction: column;
+		width: 100vw;
+		border-radius: 0;
+	}
+
+	.calculator-div {
+		width: unset;
+		border-radius: 0;
+	}
+
+	.title-and-clearAll-div {
+		flex-direction: column;
+		align-items: unset;
+	}
+
+	.clear-all {
+		width: 63px;
+		margin-block: 10px;
+	}
+
+	.result-div {
+		width: unset;
+		border-radius: 0;
+	}
+
+	.term-rate-div {
+		flex-direction: column;
+	}
+
+	button {
+		width: 100%;
+	}
+}
